@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nMB-rQ-Shg">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="testUserLocation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="SMX-U5-3j2">
+                                <rect key="frame" x="0.0" y="-52" width="414" height="894"/>
+                            </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="VVy-HH-YiA">
+                                <rect key="frame" x="30" y="743" width="355" height="32"/>
+                                <color key="backgroundColor" red="0.91587954760000001" green="0.71064960960000001" blue="0.85075956580000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <segments>
+                                    <segment title="Feed Me"/>
+                                    <segment title="Shake-Eat !"/>
+                                </segments>
+                                <connections>
+                                    <action selector="indexChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="doA-wx-x8R"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VVy-HH-YiA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="743" id="1mE-oK-21K"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="SMX-U5-3j2" secondAttribute="bottom" constant="-34" id="4Ja-YH-9cw"/>
+                            <constraint firstItem="VVy-HH-YiA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="7Zp-dz-gaw"/>
+                            <constraint firstItem="SMX-U5-3j2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UHu-Oy-152"/>
+                            <constraint firstItem="VVy-HH-YiA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f7a-HQ-eli"/>
+                            <constraint firstItem="SMX-U5-3j2" firstAttribute="centerX" secondItem="VVy-HH-YiA" secondAttribute="centerX" id="q3a-ZD-XBh"/>
+                            <constraint firstItem="SMX-U5-3j2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-52" id="tgD-y1-sMd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eMu-f4-7DX"/>
+                    <connections>
+                        <outlet property="indexchanged" destination="VVy-HH-YiA" id="z9m-yZ-0UB"/>
+                        <outlet property="mapView" destination="SMX-U5-3j2" id="fGq-KS-X39"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-198.55072463768118" y="76.339285714285708"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Lb9-4Y-cj8">
+            <objects>
+                <viewController id="nMB-rQ-Shg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3F1-uP-3q1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEU-cL-yRj">
+                                <rect key="frame" x="83" y="402" width="249" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.91587954760000001" green="0.71064960960000001" blue="0.85075956580000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                <state key="normal" title="Let's eat ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="NO6-Fe-FUm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="M5C-et-k5h"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iVD-Ve-xtT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="unB-uK-vdX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="660.86956521739137" y="75.669642857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
