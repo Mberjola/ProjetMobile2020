@@ -5,6 +5,6 @@
 \defcounter {refsection}{0}\relax 
 \beamer@sectionintoc {2}{Fonctionnalités}{9}{0}{2}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {3}{Améliorations possibles}{14}{0}{3}
+\beamer@sectionintoc {3}{Améliorations possibles}{15}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {4}{Conclusion}{14}{0}{4}
+\beamer@sectionintoc {4}{Conclusion}{17}{0}{4}
