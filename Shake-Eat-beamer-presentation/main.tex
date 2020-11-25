@@ -1,0 +1,49 @@
+\documentclass[aspectratio=43]{beamer}
+\usepackage[english]{babel}
+\input{chapters/preamble}
+\title{Shake-Eat} %->->->->-> Check hyperref title <-<-<-<-<-
+\subtitle{L'application qui choisit pour vous}
+\author[Emilie LEBON et Matthias BERJOLA]{Emilie LEBON et Matthias BERJOLA}
+\begin{document}
+\centering \includegraphics[height = 0.25 \textheight]{images/ufr-st.png}
+\centering \includegraphics[height =0.25 \textheight]{images/logo_universite.jpg}
+\institute[LIM]{
+    LIM%
+    \\%
+    Université de la Réunion%
+} %You can change the Institution if you are from somewhere else
+\date{Novembre 2020}
+%\logo{\includegraphics[width= 0.2\textwidth]{images/a-logo.png}}
+
+
+    
+    \frame{\titlepage}
+    
+    \begin{frame}{Sommaire}
+        \tableofcontents
+    \end{frame}
+    
+    \input{chapters/Présentation} %You can put the frames directly into the presentation, but using the input command and writing them in separate .tex files might be more organized
+    
+    \input{chapters/Premier.tex}
+    
+    \input{chapters/Deuxieme.tex}
+    
+    \section*{Remerciements} %You can remove this if you do not want to use it
+        \begin{frame}{Remerciements}
+        \begin{center}
+            
+       
+            Je tiens à remercier David Blain, qui a posé la question qui nous a permis de nous décider pour notre application : \\ "Qu'est-ce qu'on mange ce midi ?"
+        \end{center}
+        \end{frame}
+    
+   
+
+    \section{}
+    \begin{frame}{}
+        \centering
+            \Huge\bfseries
+        \textcolor{rose}{The End}
+    \end{frame}
+\end{document}

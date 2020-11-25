@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E468B30256E7CE6007B9425 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E468B2F256E7CE6007B9425 /* PopUpViewController.swift */; };
 		8E88426E256D5D5400B6FBC7 /* image 2.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 8E88426D256D5D5400B6FBC7 /* image 2.PNG */; };
 		8EDC639F25596EA300796D89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC639E25596EA300796D89 /* AppDelegate.swift */; };
 		8EDC63A125596EA300796D89 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC63A025596EA300796D89 /* SceneDelegate.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E468B2F256E7CE6007B9425 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		8E88426D256D5D5400B6FBC7 /* image 2.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "image 2.PNG"; path = "../../../../../Downloads/image 2.PNG"; sourceTree = "<group>"; };
 		8EDC639B25596EA300796D89 /* testUserLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testUserLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EDC639E25596EA300796D89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				8EDC63AF25596EA800796D89 /* Info.plist */,
 				8E88426D256D5D5400B6FBC7 /* image 2.PNG */,
 				8EDC63A725596EA300796D89 /* testUserLocation.xcdatamodeld */,
+				8E468B2F256E7CE6007B9425 /* PopUpViewController.swift */,
 			);
 			path = testUserLocation;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E468B30256E7CE6007B9425 /* PopUpViewController.swift in Sources */,
 				8EDC63A325596EA300796D89 /* ViewController.swift in Sources */,
 				8EDC63A925596EA300796D89 /* testUserLocation.xcdatamodeld in Sources */,
 				8EDC639F25596EA300796D89 /* AppDelegate.swift in Sources */,
